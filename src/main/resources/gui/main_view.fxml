@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="gui.MainController" style="-fx-padding: 20 20 20 20;">
+    <TextField fx:id="main_input" />
+    <TextField fx:id="runs_input" />
+    <Button text="Submit" onAction="#onTextSubmit" fx:id="submit_button" /> <Button text="Cancel" onAction="#onCancel" fx:id="cancel_button"/>
+    <TableView visible="false" managed="false" fx:id="out" />
+</VBox>

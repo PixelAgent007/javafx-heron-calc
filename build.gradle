@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+    id 'org.beryx.jlink' version '2.22.0'
+}
+
+group 'gui'
+version '1.0'
+
+sourceCompatibility = 1.15
+tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
+java { modularity.inferModulePath = true }
+modularity.disableEffectiveArgumentsAdjustment()
+
+repositories {
+    mavenCentral()
+}
+
+jlink {
+    launcher {
+        name = 'HeronCalculator'
+    }
+}
+
+application {
+    mainModule = 'javafx.jlink.example.main'
+    mainClass = 'gui.Main'
+}
+
+javafx {
+    version = '16'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+dependencies {}
