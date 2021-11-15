@@ -8,7 +8,7 @@ Benötigt Java >= 11.
 
 ## Build
 
-#####Image (macOS / Windows):
+#### Image (macOS / Windows):
 Man kann das Programm als sog. Image kompilieren.<br>
 Zum Ausführen des Images braucht man kein JRE. (*Größe ca. 100mb*)
 
@@ -16,7 +16,7 @@ Zum Ausführen des Images braucht man kein JRE. (*Größe ca. 100mb*)
 ./gradlew jlink
 ```
 
-#####Executable (*NIX / Windows):
+#### Executable (*NIX / Windows):
 Das Programm lässt sich auch als Executable kompilieren.<br>
 **Zum Ausführen der Executable braucht man ein JRE**.
 (*Größe ca. 8mb*)
